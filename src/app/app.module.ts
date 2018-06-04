@@ -8,12 +8,24 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { TabNavPage } from '../pages/tab-nav/tab-nav';
+import { AttendancePage } from '../pages/attendance/attendance';
+import { NotePage } from '../pages/note/note';
+import { NotificationPage } from '../pages/notification/notification';
+import { EbookPage } from '../pages/ebook/ebook';
+import { NewsPage } from '../pages/news/news';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    TabNavPage,
+    AttendancePage,
+    NotePage,
+    NotificationPage,
+    EbookPage,
+    NewsPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +35,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    TabNavPage,
+    AttendancePage,
+    NotePage,
+    NotificationPage,
+    EbookPage,
+    NewsPage
   ],
   providers: [
     StatusBar,
