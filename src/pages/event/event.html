@@ -1,0 +1,49 @@
+<!--
+  Generated template for the EventPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>event</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-calendar [(ngModel)]="dateMulti" [options]="optionsMulti" [type]="type" [format]="'YYYY-MM-DD'">
+  </ion-calendar>
+  <ion-list>
+    <ion-list-header>วันนี้</ion-list-header>
+    <ion-item-group (ionItemReorder)="reorderItems($event)">
+      <ion-item>
+        <ion-avatar item-start>
+          all-day
+        </ion-avatar>
+        <h2>ปฐมนิเทศ</h2>
+        <p>อาคาร หอประชุมใหญ่</p>
+      </ion-item>
+    </ion-item-group>
+    <ion-list-header>ศุกร์ 21 มิ.ย.</ion-list-header>
+    <ion-item-group (ionItemReorder)="reorderItems($event)">
+      <ion-item>
+        <ion-avatar item-start>
+          11:00
+        </ion-avatar>
+        <h2>ไหว้ครู</h2>
+        <p>อาคาร หอประชุมใหญ่</p>
+      </ion-item>
+      
+      <ion-item>
+        <ion-avatar item-start>
+          13:00
+        </ion-avatar>
+        <h2>สัมมนาวิชาการ เรื่อง ชีวิตในยุค 4.0</h2>
+        <p>อาคาร หอประชุมใหญ่</p>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+</ion-content>

@@ -14,6 +14,8 @@ import { NotePage } from '../pages/note/note';
 import { NotificationPage } from '../pages/notification/notification';
 import { EbookPage } from '../pages/ebook/ebook';
 import { NewsPage } from '../pages/news/news';
+import { EventPage } from '../pages/event/event';
+import { CalendarModule } from "ion2-calendar";
 
 @NgModule({
   declarations: [
@@ -25,11 +27,13 @@ import { NewsPage } from '../pages/news/news';
     NotePage,
     NotificationPage,
     EbookPage,
-    NewsPage
+    NewsPage,
+    EventPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    CalendarModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -41,7 +45,8 @@ import { NewsPage } from '../pages/news/news';
     NotePage,
     NotificationPage,
     EbookPage,
-    NewsPage
+    NewsPage,
+    EventPage
   ],
   providers: [
     StatusBar,

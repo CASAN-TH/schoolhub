@@ -5,6 +5,7 @@ import { NotePage } from '../note/note';
 import { NotificationPage } from '../notification/notification';
 import { EbookPage } from '../ebook/ebook';
 import { NewsPage } from '../news/news';
+import { EventPage } from '../event/event';
 
 /**
  * Generated class for the TabNavPage tabs.
@@ -24,6 +25,7 @@ export class TabNavPage {
   notificationRoot = NotificationPage
   ebookRoot = EbookPage
   newsRoot = NewsPage
+  eventRoot = EventPage
 
 
   constructor(public navCtrl: NavController) {}
